@@ -1,9 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Link } from "expo-router";
+ import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}> hello, world!</Text>
+      <Link href="/about" style={styles.button}>
+      Go to About Us
+      </Link>
     </View>
   );
 }
